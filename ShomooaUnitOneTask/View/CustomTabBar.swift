@@ -75,14 +75,11 @@ class CustomizedTabBar: UITabBar {
         path.addLine(to: CGPoint(x: self.frame.width, y: 0))
         path.addLine(to: CGPoint(x: self.frame.width, y: self.frame.height))
         path.addLine(to: CGPoint(x: 0, y: self.frame.height))
-//        path.accessibilityFrame.sh
-        
         
         self.layer.shadowOffset = CGSize(width: -4, height: -4)
         self.layer.shadowRadius = 10
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOpacity = 0.5
-//        self.he
         path.close()
         
         return path.cgPath
@@ -96,10 +93,9 @@ class CustomizedTabBar: UITabBar {
     func createPathCircle() -> CGPath {
         
         let radius: CGFloat = 30.0
-        let radii: CGFloat = 15.0
+        let _: CGFloat = 15.0
         let path = UIBezierPath()
-        //        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: radii, height: 0.0))
-        
+    
         let centerWidth = self.frame.width / 2
         
         path.move(to: CGPoint(x: 0, y: 0))
@@ -108,7 +104,6 @@ class CustomizedTabBar: UITabBar {
         path.addLine(to: CGPoint(x: self.frame.width, y: 0))
         path.addLine(to: CGPoint(x: self.frame.width, y: self.frame.height))
         path.addLine(to: CGPoint(x: 0, y: self.frame.height))
-        //        path.corner
         path.close()
         return path.cgPath
     }

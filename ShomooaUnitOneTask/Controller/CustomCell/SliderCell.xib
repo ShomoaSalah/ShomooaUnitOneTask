@@ -21,21 +21,63 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Psw-aa-xgr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="611"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightbulb" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DjS-QO-7Va">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightbulb" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DjS-QO-7Va">
                                 <rect key="frame" x="0.0" y="-1.5" width="414" height="612.5"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="40"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHb-s8-TVK">
+                                <rect key="frame" x="0.0" y="511" width="414" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="07t-Kd-mUe">
+                                        <rect key="frame" x="44.5" y="36" width="325.5" height="56"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5J-lv-qoa">
+                                                <rect key="frame" x="0.0" y="0.0" width="325.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUf-F1-UEl">
+                                                <rect key="frame" x="0.0" y="32" width="325.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IbY-Gf-2pk"/>
+                                    <constraint firstItem="07t-Kd-mUe" firstAttribute="centerX" secondItem="FHb-s8-TVK" secondAttribute="centerX" id="YaE-Of-PvK"/>
+                                    <constraint firstAttribute="bottom" secondItem="07t-Kd-mUe" secondAttribute="bottom" constant="8" id="p1z-jc-aZ7"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archivebox.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mgt-7x-HzF">
+                                <rect key="frame" x="284" y="461.5" width="100" height="99"/>
+                                <color key="tintColor" red="0.77776892009999998" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EIy-wO-ZOm"/>
+                                    <constraint firstAttribute="width" constant="100" id="oD3-1o-ZWa"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Mgt-7x-HzF" firstAttribute="centerY" secondItem="FHb-s8-TVK" secondAttribute="top" id="EuT-fY-PFU"/>
                             <constraint firstItem="DjS-QO-7Va" firstAttribute="top" secondItem="Psw-aa-xgr" secondAttribute="top" id="V6a-oF-KU7"/>
+                            <constraint firstAttribute="bottom" secondItem="FHb-s8-TVK" secondAttribute="bottom" id="fbI-WX-jfK"/>
                             <constraint firstAttribute="trailing" secondItem="DjS-QO-7Va" secondAttribute="trailing" id="h1h-OR-Nwn"/>
+                            <constraint firstAttribute="trailing" secondItem="FHb-s8-TVK" secondAttribute="trailing" id="oDe-aU-5w3"/>
+                            <constraint firstItem="Mgt-7x-HzF" firstAttribute="centerX" secondItem="FHb-s8-TVK" secondAttribute="trailing" constant="-80" id="rK0-8x-GUc"/>
                             <constraint firstItem="DjS-QO-7Va" firstAttribute="leading" secondItem="Psw-aa-xgr" secondAttribute="leading" id="rX8-Be-1M3"/>
                             <constraint firstAttribute="bottom" secondItem="DjS-QO-7Va" secondAttribute="bottom" id="t8D-IJ-0MO"/>
+                            <constraint firstItem="FHb-s8-TVK" firstAttribute="leading" secondItem="Psw-aa-xgr" secondAttribute="leading" id="vxM-JJ-e4p"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -54,12 +96,14 @@
                 <constraint firstItem="Psw-aa-xgr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="q70-2d-DPu"/>
             </constraints>
             <connections>
+                <outlet property="shadowView" destination="FHb-s8-TVK" id="edY-vN-fpT"/>
                 <outlet property="sliderImg" destination="DjS-QO-7Va" id="vgu-0n-3tk"/>
             </connections>
             <point key="canvasLocation" x="139" y="100"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="archivebox.circle.fill" catalog="system" width="128" height="121"/>
         <image name="lightbulb" catalog="system" width="113" height="128"/>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

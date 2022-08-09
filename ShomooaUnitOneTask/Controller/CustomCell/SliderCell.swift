@@ -6,15 +6,27 @@
 //
 
 import UIKit
-import FSPagerView
 
-class SliderCell: FSPagerViewCell {
-
+class SliderCell: UICollectionViewCell {
+    
     @IBOutlet weak var sliderImg: UIImageView!
+    
+    @IBOutlet weak var shadowView: UIView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        shadowView.layer.cornerRadius = 40
+        shadowView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     
     private var item: UIImage! {
         didSet{
@@ -26,5 +38,5 @@ class SliderCell: FSPagerViewCell {
     func configure(data: UIImage) {
         self.item = data
     }
-
+    
 }
