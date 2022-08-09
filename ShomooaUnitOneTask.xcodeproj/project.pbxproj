@@ -22,7 +22,6 @@
 		4052B2CF28A2513800ABEF24 /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4052B2CD28A2513800ABEF24 /* SliderCell.xib */; };
 		4052B2D228A25A1B00ABEF24 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052B2D128A25A1B00ABEF24 /* BaseVC.swift */; };
 		4052B2D428A2605300ABEF24 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052B2D328A2605300ABEF24 /* UIImage+Extensions.swift */; };
-		4052B2F628A275AA00ABEF24 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052B2F528A275AA00ABEF24 /* UIDevice+Extension.swift */; };
 		65776190C3F2A7B897051CCC /* Pods_ShomooaUnitOneTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0E09AD5D7CCF29E14AFB67 /* Pods_ShomooaUnitOneTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 		4052B2CD28A2513800ABEF24 /* SliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
 		4052B2D128A25A1B00ABEF24 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		4052B2D328A2605300ABEF24 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
-		4052B2F528A275AA00ABEF24 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		ACF3133004AD35649EED3D24 /* Pods-ShomooaUnitOneTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShomooaUnitOneTask.debug.xcconfig"; path = "Target Support Files/Pods-ShomooaUnitOneTask/Pods-ShomooaUnitOneTask.debug.xcconfig"; sourceTree = "<group>"; };
 		D254AA2D05B16160A6ADB896 /* Pods-ShomooaUnitOneTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShomooaUnitOneTask.release.xcconfig"; path = "Target Support Files/Pods-ShomooaUnitOneTask/Pods-ShomooaUnitOneTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +111,6 @@
 			children = (
 				4052B2C328A24C4800ABEF24 /* UIView+Extensions.swift */,
 				4052B2D328A2605300ABEF24 /* UIImage+Extensions.swift */,
-				4052B2F528A275AA00ABEF24 /* UIDevice+Extension.swift */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";
@@ -270,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4052B2BF28A24BC100ABEF24 /* FeedVC.swift in Sources */,
-				4052B2F628A275AA00ABEF24 /* UIDevice+Extension.swift in Sources */,
 				4052B2A828A247A100ABEF24 /* AppDelegate.swift in Sources */,
 				4052B2C428A24C4800ABEF24 /* UIView+Extensions.swift in Sources */,
 				4052B2C628A24D3100ABEF24 /* MyPreziVC.swift in Sources */,
