@@ -16,6 +16,7 @@ class MyPreziVC: BaseVC {
         super.viewDidLoad()
 
         setUI()
+        
     }
     
 

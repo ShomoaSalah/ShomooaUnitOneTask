@@ -25,6 +25,7 @@ class CustomTabBar: UITabBarController {
 @IBDesignable
 class CustomizedTabBar: UITabBar {
     
+    
     private var shapeLayer: CALayer?
     
     private func addShape() {
@@ -81,7 +82,7 @@ class CustomizedTabBar: UITabBar {
         self.layer.shadowRadius = 10
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOpacity = 0.5
-        
+//        self.he
         path.close()
         
         return path.cgPath

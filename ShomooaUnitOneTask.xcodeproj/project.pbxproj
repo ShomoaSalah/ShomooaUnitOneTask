@@ -21,6 +21,7 @@
 		4052B2CE28A2513800ABEF24 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052B2CC28A2513800ABEF24 /* SliderCell.swift */; };
 		4052B2CF28A2513800ABEF24 /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4052B2CD28A2513800ABEF24 /* SliderCell.xib */; };
 		4052B2D228A25A1B00ABEF24 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052B2D128A25A1B00ABEF24 /* BaseVC.swift */; };
+		4052B2D428A2605300ABEF24 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052B2D328A2605300ABEF24 /* UIImage+Extensions.swift */; };
 		65776190C3F2A7B897051CCC /* Pods_ShomooaUnitOneTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0E09AD5D7CCF29E14AFB67 /* Pods_ShomooaUnitOneTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		4052B2CC28A2513800ABEF24 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
 		4052B2CD28A2513800ABEF24 /* SliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
 		4052B2D128A25A1B00ABEF24 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		4052B2D328A2605300ABEF24 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		ACF3133004AD35649EED3D24 /* Pods-ShomooaUnitOneTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShomooaUnitOneTask.debug.xcconfig"; path = "Target Support Files/Pods-ShomooaUnitOneTask/Pods-ShomooaUnitOneTask.debug.xcconfig"; sourceTree = "<group>"; };
 		D254AA2D05B16160A6ADB896 /* Pods-ShomooaUnitOneTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShomooaUnitOneTask.release.xcconfig"; path = "Target Support Files/Pods-ShomooaUnitOneTask/Pods-ShomooaUnitOneTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				4052B2C328A24C4800ABEF24 /* UIView+Extensions.swift */,
+				4052B2D328A2605300ABEF24 /* UIImage+Extensions.swift */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				4052B2A828A247A100ABEF24 /* AppDelegate.swift in Sources */,
 				4052B2C428A24C4800ABEF24 /* UIView+Extensions.swift in Sources */,
 				4052B2C628A24D3100ABEF24 /* MyPreziVC.swift in Sources */,
+				4052B2D428A2605300ABEF24 /* UIImage+Extensions.swift in Sources */,
 				4052B2CE28A2513800ABEF24 /* SliderCell.swift in Sources */,
 				4052B2CA28A24D5C00ABEF24 /* ProfileVC.swift in Sources */,
 				4052B2C828A24D4900ABEF24 /* DoingGoodVC.swift in Sources */,
@@ -425,8 +429,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,7 +442,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -453,8 +459,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +472,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
